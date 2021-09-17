@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap");
 @import "reset.css";
 @import "variable.css";
 
@@ -12,13 +12,79 @@ body {
   margin: 0;
   padding: 50px;
   background-color: whitesmoke;
+  color: var(--black);
+  font-family: "Nunito", sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 800;
+  margin: 10px 0;
+}
+
+h6 {
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0.6;
 }
 
 .left-screen,
 .right-screen {
-  width: 270px;
+  width: 310px;
   height: 590px;
   background-color: white;
   border-radius: 40px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 30px 20px;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Left screen main */
+.left-screen__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-screen__main__img {
+  width: 70px;
+  height: 70px;
+  margin: 20px 0;
+  border-radius: 50%;
+  filter: drop-shadow(0 3px 7px rgba(255, 152, 112));
+}
+
+.left-screen__main__btns {
+  margin: 30px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-btn {
+  width: 90px;
+  height: 35px;
+  border: none;
+  border-radius: 30px;
+  font-size: 13px;
+}
+
+.main-btn:first-child {
+  background-color: var(--black);
+  color: white;
+}
+
+.main-btn:last-child {
+  background-color: whitesmoke;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.main-btn:last-child i {
+  color: var(--black);
 }
