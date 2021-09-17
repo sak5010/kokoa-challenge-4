@@ -103,7 +103,13 @@ h6 {
 .song {
   position: relative;
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  padding: 3px 0;
+}
+
+.selected-song {
+  background-color: whitesmoke;
+  border-radius: 10px;
 }
 
 .song__img {
@@ -111,6 +117,17 @@ h6 {
   height: 40px;
   border-radius: 7px;
   margin: 0 15px;
+}
+
+.selected-img {
+  filter: brightness(70%);
+}
+
+.song__playing-icon {
+  position: absolute;
+  left: 23px;
+  top: 13px;
+  color: white;
 }
 
 .song-meta {
@@ -131,7 +148,7 @@ h6 {
 .song__ellipsis {
   position: absolute;
   right: 15px;
-  top: 7px;
+  top: 14px;
   opacity: 0.4;
 }
 
