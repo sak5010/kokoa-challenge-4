@@ -162,3 +162,19 @@ h6 {
   justify-content: space-around;
   width: 40%;
 }
+
+/* Right screen main */
+.right-screen__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 35px 0;
+}
+.right-screen__main-img {
+  width: 190px;
+  height: 190px;
+  margin: 30px 0;
+  border-radius: 20px;
+  filter: drop-shadow(0 10px 12px rgba(255, 83, 57));
+}
